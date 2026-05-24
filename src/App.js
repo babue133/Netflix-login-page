@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Success from "./component/Success"; 
+import dashboard from "./component/dashborad"; 
 import { useNavigate } from "react-router-dom";
 import "./App.css";
 
@@ -9,7 +9,7 @@ function App() {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
   const [message, setMessage] = useState("");
-const[show,setShow]=useState(false);
+
   function handleUser(evt) {
     setUser(evt.target.value);
   }
@@ -74,11 +74,11 @@ const[show,setShow]=useState(false);
           <label>
             <input type="checkbox" /> Save login info
           </label>
-          <a href="#">Need help?</a>
+          <a href="/">Need help?</a>
         </div>
 
         <p className="signup">
-          New to Netflix? <a href="#">Sign up now.</a>
+          New to Netflix? <a href="/">Sign up now.</a>
         </p>
       </div>
     </div>
