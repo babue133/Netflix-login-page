@@ -71,11 +71,11 @@ function App() {
           <label>
             <input type="checkbox" /> Save login info
           </label>
-          <a>Need help?</a>
+          <p>Need help?</p>
         </div>
 
         <p className="signup">
-          New to Netflix? <a>Sign up now.</a>
+          New to Netflix? <p>Sign up now.</p>
         </p>
       </div>
     </div>

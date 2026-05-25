@@ -109,13 +109,14 @@ button:hover {
   cursor: pointer;
 }
 
-.options a {
+.options p {
+    
   color: #aaa;
   text-decoration: none;
    transition: color 0.3s ease;
 }
 
-.options a:hover {
+.options p:hover {
   text-decoration: underline;
 }
 
@@ -124,13 +125,13 @@ button:hover {
   font-size: 0.9rem;
 }
 
-.signup a {
+.signup p {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-.signup a:hover {
+.signup p:hover {
   text-decoration: underline;
 }
 
