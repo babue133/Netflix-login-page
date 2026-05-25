@@ -1,5 +1,5 @@
 
-function Success() {
+function Dashboard() {
   return (
     <div>
       <h1>Welcome to your Dashboard 🎉</h1>
@@ -8,4 +8,4 @@ function Success() {
   );
 }
 
-export default Success;
+export default Dashboard;

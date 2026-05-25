@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import dashboard from "./component/dashborad"; 
 import { useNavigate } from "react-router-dom";
 import "./App.css";
 
@@ -32,7 +31,7 @@ function App() {
 
       if (response.data.success) {
         setMessage("✅ Login successful!");
-        setTimeout(() => navigate("/success"), 1500);
+        setTimeout(() => navigate("/dashboard"), 1500);
       } else {
         setMessage("❌ Invalid credentials");
         setTimeout(() => navigate("/fail"), 1500);
@@ -40,7 +39,6 @@ function App() {
     } catch (err) {
       setMessage("⚠️ Server error. Please try again later.");
     }
-
 
     // Clear inputs after any attempt
     setUser("");
@@ -51,7 +49,6 @@ function App() {
     <div className="login-page">
       <div className="login-box">
         <h1 className="logo">NETFLIX</h1>
-        
 
         {message && <p className="message">{message}</p>}
 
@@ -74,11 +71,11 @@ function App() {
           <label>
             <input type="checkbox" /> Save login info
           </label>
-          <a href="/">Need help?</a>
+          <a href="#">Need help?</a>
         </div>
 
         <p className="signup">
-          New to Netflix? <a href="/">Sign up now.</a>
+          New to Netflix? <a href="#">Sign up now.</a>
         </p>
       </div>
     </div>
